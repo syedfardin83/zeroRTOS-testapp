@@ -34,7 +34,7 @@ CPPFLAGS += -Ilibopencm3/include -MD $(INCLUDES)
 all: $(ZERORTOS_LIB) $(OBJS) $(LDSCRIPT) $(ELF_FILE)
 
 # Build zeroRTOS
-$(ZERORTOS_LIB):
+$(ZERORTOS_LIB): 
 	@printf "	MAKE  zeroRTOS\n"
 	$(MAKE) -C zeroRTOS ARCH=$(ARCH) FAMILY=$(FAMILY)
 
@@ -61,7 +61,7 @@ LIB_INCLUDES = -LzeroRTOS/lib/$(ARCH) -lzeroRTOS -Llibopencm3/lib -lopencm3_$(su
 # Generate the final elf file
 $(ELF_FILE): $(OBJS) $(ZERORTOS_LIB) $(LDSCRIPT)
 	@printf "	LD   $@\n"
-	$(Q)$(CC) $(OBJS) $(LIB_INCLUDES) -T $(LDSCRIPT) $(BUILD_OPTIONS) -o $@
+	$(Q)$(CC) $(OBJS) $(LIB_INCLUDES) -T $(LDSCRIPT) $(BUILD_OPTIONS) $(ARCH_FLAGS) -o $@
 
 clean:
 	rm -rf build

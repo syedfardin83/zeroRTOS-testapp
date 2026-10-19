@@ -22,14 +22,12 @@ libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
                               libopencm3/lib/libopencm3_stm32l0.a(rcc.o) (flash_prefetch_enable)
 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
                               libopencm3/lib/libopencm3_stm32l0.a(rcc.o) (pwr_set_vos_scale)
-/usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_thumb1_case_uqi.o)
+/usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
                               libopencm3/lib/libopencm3_stm32l0.a(rcc.o) (__gnu_thumb1_case_uqi)
-/usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_udivsi3.o)
+/usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
                               libopencm3/lib/libopencm3_stm32l0.a(systick.o) (__aeabi_uidiv)
-/usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_dvmd_tls.o)
-                              /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
-/usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
-                              zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o) (strcpy)
+/usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
 
 Discarded input sections
 
@@ -637,15 +635,12 @@ Discarded input sections
  .debug_macro   0x00000000       0x8e libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
  .debug_macro   0x00000000       0x58 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
  .debug_macro   0x00000000      0x903 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
- .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_thumb1_case_uqi.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_thumb1_case_uqi.o)
- .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_udivsi3.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_udivsi3.o)
- .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_dvmd_tls.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_dvmd_tls.o)
- .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
- .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
 Memory Configuration
 
@@ -661,11 +656,11 @@ LOAD build//vector/vector.o
 LOAD zeroRTOS/lib/armv6-m/libzeroRTOS.a
 LOAD libopencm3/lib/libopencm3_stm32l0.a
 START GROUP
-LOAD /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a
-LOAD /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a
+LOAD /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
 END GROUP
 
-.text           0x08000000      0xad8
+.text           0x08000000      0x9f4
  *(.vectors)
  .vectors       0x08000000       0xc0 build//vector/vector.o
                 0x08000000                vector_table
@@ -718,160 +713,158 @@ END GROUP
  .text          0x08000210       0x84 zeroRTOS/lib/armv6-m/libzeroRTOS.a(kernel.o)
                 0x08000210                sys_tick_handler
                 0x08000280                zrtos_init
- .text          0x08000294       0xb8 zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
+ .text          0x08000294       0xcc zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
                 0x08000294                zrtos_add_to_tasks_list
                 0x080002c0                zrtos_create_task
-                0x0800030c                zrtos_tasks_init
-                0x0800032c                zrtos_tasks_start
- .text          0x0800034c       0x7c zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
-                0x0800034c                zrtos_malloc
-                0x08000378                zrtos_stack_malloc
-                0x080003a8                zrtos_memset
-                0x080003b8                zrtos_memory_init
- .text          0x080003c8       0xf4 zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
-                0x080003c8                zrtos_systick_setup
-                0x080003e4                zrtos_nvic_setup
-                0x080003f8                zrtos_push_dummy
-                0x08000418                zrtos_switch_to_thread
-                0x08000434                zrtos_set_pendsv
-                0x08000448                pend_sv_handler
+                0x08000320                zrtos_tasks_init
+                0x08000340                zrtos_tasks_start
+ .text          0x08000360       0x7c zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
+                0x08000360                zrtos_malloc
+                0x0800038c                zrtos_stack_malloc
+                0x080003bc                zrtos_memset
+                0x080003cc                zrtos_memory_init
+ .text          0x080003dc       0xec zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
+                0x080003dc                zrtos_systick_setup
+                0x080003f8                zrtos_nvic_setup
+                0x0800040c                zrtos_push_dummy
+                0x0800042c                zrtos_switch_to_thread
+                0x08000444                zrtos_set_pendsv
+                0x08000458                pend_sv_handler
  .text.rcc_osc_on
-                0x080004bc       0x54 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
-                0x080004bc                rcc_osc_on
+                0x080004c8       0x54 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x080004c8                rcc_osc_on
  .text.rcc_osc_off
-                0x08000510       0x5c libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
-                0x08000510                rcc_osc_off
+                0x0800051c       0x5c libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x0800051c                rcc_osc_off
  .text.rcc_is_osc_ready
-                0x0800056c       0x54 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
-                0x0800056c                rcc_is_osc_ready
+                0x08000578       0x54 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x08000578                rcc_is_osc_ready
  .text.rcc_wait_for_osc_ready
-                0x080005c0       0x10 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
-                0x080005c0                rcc_wait_for_osc_ready
+                0x080005cc       0x10 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x080005cc                rcc_wait_for_osc_ready
  .text.rcc_set_sysclk_source
-                0x080005d0       0x48 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
-                0x080005d0                rcc_set_sysclk_source
+                0x080005dc       0x48 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x080005dc                rcc_set_sysclk_source
  .text.rcc_set_pll_multiplier
-                0x08000618       0x18 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
-                0x08000618                rcc_set_pll_multiplier
+                0x08000624       0x18 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x08000624                rcc_set_pll_multiplier
  .text.rcc_set_pll_divider
-                0x08000630       0x18 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
-                0x08000630                rcc_set_pll_divider
+                0x0800063c       0x18 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x0800063c                rcc_set_pll_divider
  .text.rcc_set_pll_source
-                0x08000648       0x18 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
-                0x08000648                rcc_set_pll_source
+                0x08000654       0x18 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x08000654                rcc_set_pll_source
  .text.rcc_set_ppre1
-                0x08000660       0x18 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
-                0x08000660                rcc_set_ppre1
+                0x0800066c       0x18 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x0800066c                rcc_set_ppre1
  .text.rcc_set_ppre2
-                0x08000678       0x18 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
-                0x08000678                rcc_set_ppre2
+                0x08000684       0x18 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x08000684                rcc_set_ppre2
  .text.rcc_set_hpre
-                0x08000690       0x14 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
-                0x08000690                rcc_set_hpre
+                0x0800069c       0x14 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x0800069c                rcc_set_hpre
  .text.rcc_clock_setup_pll
-                0x080006a4       0xac libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
-                0x080006a4                rcc_clock_setup_pll
+                0x080006b0       0xac libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x080006b0                rcc_clock_setup_pll
  .text.rcc_periph_clock_enable
-                0x08000750       0x1c libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
-                0x08000750                rcc_periph_clock_enable
+                0x0800075c       0x1c libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
+                0x0800075c                rcc_periph_clock_enable
  .text.systick_set_clocksource
-                0x0800076c       0x14 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
-                0x0800076c                systick_set_clocksource
+                0x08000778       0x14 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
+                0x08000778                systick_set_clocksource
  .text.systick_set_frequency
-                0x08000780       0x24 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
-                0x08000780                systick_set_frequency
+                0x0800078c       0x24 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
+                0x0800078c                systick_set_frequency
  .text.systick_interrupt_enable
-                0x080007a4       0x10 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
-                0x080007a4                systick_interrupt_enable
+                0x080007b0       0x10 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
+                0x080007b0                systick_interrupt_enable
  .text.systick_counter_enable
-                0x080007b4       0x10 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
-                0x080007b4                systick_counter_enable
+                0x080007c0       0x10 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
+                0x080007c0                systick_counter_enable
  .text.nvic_set_priority
-                0x080007c4       0x3c libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
-                0x080007c4                nvic_set_priority
+                0x080007d0       0x3c libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
+                0x080007d0                nvic_set_priority
  .text.flash_prefetch_enable
-                0x08000800       0x10 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
-                0x08000800                flash_prefetch_enable
+                0x0800080c       0x10 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
+                0x0800080c                flash_prefetch_enable
  .text.flash_set_ws
-                0x08000810       0x14 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
-                0x08000810                flash_set_ws
+                0x0800081c       0x14 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
+                0x0800081c                flash_set_ws
  .text.pwr_set_vos_scale
-                0x08000824       0x34 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
-                0x08000824                pwr_set_vos_scale
- .text          0x08000858       0x14 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_thumb1_case_uqi.o)
-                0x08000858                __gnu_thumb1_case_uqi
- .text          0x0800086c      0x114 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_udivsi3.o)
-                0x0800086c                __udivsi3
-                0x0800086c                __aeabi_uidiv
-                0x08000960                __aeabi_uidivmod
- .text          0x08000980        0x4 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_dvmd_tls.o)
-                0x08000980                __aeabi_ldiv0
-                0x08000980                __aeabi_idiv0
- .text.strcpy   0x08000984       0xf0 /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
-                0x08000984                strcpy
-                0x08000a74                        . = ALIGN (0x4)
+                0x08000830       0x34 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
+                0x08000830                pwr_set_vos_scale
+ .text          0x08000864       0x14 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                0x08000864                __gnu_thumb1_case_uqi
+ .text          0x08000878      0x114 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                0x08000878                __udivsi3
+                0x08000878                __aeabi_uidiv
+                0x08000984                __aeabi_uidivmod
+ .text          0x0800098c        0x4 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x0800098c                __aeabi_ldiv0
+                0x0800098c                __aeabi_idiv0
+                0x08000990                        . = ALIGN (0x4)
  *(.rodata*)
  .rodata.str1.1
-                0x08000a74        0xe build//main.o
- *fill*         0x08000a82        0x2 
+                0x08000990        0xe build//main.o
+ *fill*         0x0800099e        0x2 
  .rodata.rcc_hsi_configs
-                0x08000a84       0x54 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
-                0x08000a84                rcc_hsi_configs
-                0x08000ad8                        . = ALIGN (0x4)
+                0x080009a0       0x54 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x080009a0                rcc_hsi_configs
+                0x080009f4                        . = ALIGN (0x4)
 
-.glue_7         0x08000ad8        0x0
- .glue_7        0x08000ad8        0x0 linker stubs
+.glue_7         0x080009f4        0x0
+ .glue_7        0x080009f4        0x0 linker stubs
 
-.glue_7t        0x08000ad8        0x0
- .glue_7t       0x08000ad8        0x0 linker stubs
+.glue_7t        0x080009f4        0x0
+ .glue_7t       0x080009f4        0x0 linker stubs
 
-.vfp11_veneer   0x08000ad8        0x0
- .vfp11_veneer  0x08000ad8        0x0 linker stubs
+.vfp11_veneer   0x080009f4        0x0
+ .vfp11_veneer  0x080009f4        0x0 linker stubs
 
-.v4_bx          0x08000ad8        0x0
- .v4_bx         0x08000ad8        0x0 linker stubs
+.v4_bx          0x080009f4        0x0
+ .v4_bx         0x080009f4        0x0 linker stubs
 
-.iplt           0x08000ad8        0x0
- .iplt          0x08000ad8        0x0 build//main.o
+.iplt           0x080009f4        0x0
+ .iplt          0x080009f4        0x0 build//main.o
 
-.rel.dyn        0x08000ad8        0x0
- .rel.iplt      0x08000ad8        0x0 build//main.o
+.rel.dyn        0x080009f4        0x0
+ .rel.iplt      0x080009f4        0x0 build//main.o
 
-.preinit_array  0x08000ad8        0x0
-                0x08000ad8                        . = ALIGN (0x4)
-                0x08000ad8                        __preinit_array_start = .
+.preinit_array  0x080009f4        0x0
+                0x080009f4                        . = ALIGN (0x4)
+                0x080009f4                        __preinit_array_start = .
  *(.preinit_array)
-                0x08000ad8                        __preinit_array_end = .
+                0x080009f4                        __preinit_array_end = .
 
-.init_array     0x08000ad8        0x0
-                0x08000ad8                        . = ALIGN (0x4)
-                0x08000ad8                        __init_array_start = .
+.init_array     0x080009f4        0x0
+                0x080009f4                        . = ALIGN (0x4)
+                0x080009f4                        __init_array_start = .
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
-                0x08000ad8                        __init_array_end = .
+                0x080009f4                        __init_array_end = .
 
-.fini_array     0x08000ad8        0x0
-                0x08000ad8                        . = ALIGN (0x4)
-                0x08000ad8                        __fini_array_start = .
+.fini_array     0x080009f4        0x0
+                0x080009f4                        . = ALIGN (0x4)
+                0x080009f4                        __fini_array_start = .
  *(.fini_array)
  *(SORT_BY_NAME(.fini_array.*))
-                0x08000ad8                        __fini_array_end = .
+                0x080009f4                        __fini_array_end = .
 
 .ARM.extab
  *(.ARM.extab*)
 
-.ARM.exidx      0x08000ad8        0x0
-                0x08000ad8                        __exidx_start = .
+.ARM.exidx      0x080009f4        0x0
+                0x080009f4                        __exidx_start = .
  *(.ARM.exidx*)
-                0x08000ad8                        __exidx_end = .
-                0x08000ad8                        . = ALIGN (0x4)
-                0x08000ad8                        _etext = .
+                0x080009f4                        __exidx_end = .
+                0x080009f4                        . = ALIGN (0x4)
+                0x080009f4                        _etext = .
 
 .noinit
  *(.noinit*)
-                0x08000ad8                        . = ALIGN (0x4)
+                0x080009f4                        . = ALIGN (0x4)
 
-.data           0x20000000       0x14 load address 0x08000ad8
+.data           0x20000000       0x14 load address 0x080009f4
                 0x20000000                        _data = .
  *(.data*)
  .data          0x20000000        0x8 zeroRTOS/lib/armv6-m/libzeroRTOS.a(kernel.o)
@@ -888,12 +881,12 @@ END GROUP
  *(.ramtext*)
                 0x20000014                        . = ALIGN (0x4)
                 0x20000014                        _edata = .
-                0x08000ad8                        _data_loadaddr = LOADADDR (.data)
+                0x080009f4                        _data_loadaddr = LOADADDR (.data)
 
-.igot.plt       0x20000014        0x0 load address 0x08000aec
+.igot.plt       0x20000014        0x0 load address 0x08000a08
  .igot.plt      0x20000014        0x0 build//main.o
 
-.bss            0x20000018     0x1044 load address 0x08000aec
+.bss            0x20000018     0x1044 load address 0x08000a08
  *(.bss*)
  .bss           0x20000018       0x10 build//main.o
                 0x20000018                a
@@ -921,43 +914,41 @@ END GROUP
 OUTPUT(build//firmware.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x00000000     0x2bf9
+.debug_info     0x00000000     0x2b00
  .debug_info    0x00000000      0x3c9 build//main.o
  .debug_info    0x000003c9      0x2c8 build//vector/vector.o
  .debug_info    0x00000691      0x256 zeroRTOS/lib/armv6-m/libzeroRTOS.a(kernel.o)
- .debug_info    0x000008e7      0x412 zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
- .debug_info    0x00000cf9      0x1fa zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
- .debug_info    0x00000ef3      0x29d zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
- .debug_info    0x00001190      0xc63 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
- .debug_info    0x00001df3      0x651 libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
- .debug_info    0x00002444      0x23b libopencm3/lib/libopencm3_stm32l0.a(systick.o)
- .debug_info    0x0000267f      0x22e libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
- .debug_info    0x000028ad       0xf6 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
- .debug_info    0x000029a3       0xe3 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
- .debug_info    0x00002a86       0x31 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_thumb1_case_uqi.o)
- .debug_info    0x00002ab7       0x3e /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_udivsi3.o)
- .debug_info    0x00002af5       0x3c /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_dvmd_tls.o)
- .debug_info    0x00002b31       0xc8 /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
+ .debug_info    0x000008e7      0x3e1 zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
+ .debug_info    0x00000cc8      0x1fa zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
+ .debug_info    0x00000ec2      0x29d zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
+ .debug_info    0x0000115f      0xc63 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+ .debug_info    0x00001dc2      0x651 libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
+ .debug_info    0x00002413      0x23b libopencm3/lib/libopencm3_stm32l0.a(systick.o)
+ .debug_info    0x0000264e      0x22e libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
+ .debug_info    0x0000287c       0xf6 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
+ .debug_info    0x00002972       0xe3 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
+ .debug_info    0x00002a55       0x31 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_info    0x00002a86       0x3e /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_info    0x00002ac4       0x3c /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
-.debug_abbrev   0x00000000     0x124b
+.debug_abbrev   0x00000000     0x11cd
  .debug_abbrev  0x00000000      0x1dc build//main.o
  .debug_abbrev  0x000001dc      0x14f build//vector/vector.o
  .debug_abbrev  0x0000032b      0x116 zeroRTOS/lib/armv6-m/libzeroRTOS.a(kernel.o)
- .debug_abbrev  0x00000441      0x1ff zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
- .debug_abbrev  0x00000640      0x121 zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
- .debug_abbrev  0x00000761      0x19e zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
- .debug_abbrev  0x000008ff      0x362 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
- .debug_abbrev  0x00000c61      0x174 libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
- .debug_abbrev  0x00000dd5      0x168 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
- .debug_abbrev  0x00000f3d       0xe3 libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
- .debug_abbrev  0x00001020       0x9d libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
- .debug_abbrev  0x000010bd       0x97 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
- .debug_abbrev  0x00001154       0x28 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_thumb1_case_uqi.o)
- .debug_abbrev  0x0000117c       0x28 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_udivsi3.o)
- .debug_abbrev  0x000011a4       0x26 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_dvmd_tls.o)
- .debug_abbrev  0x000011ca       0x81 /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
+ .debug_abbrev  0x00000441      0x202 zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
+ .debug_abbrev  0x00000643      0x121 zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
+ .debug_abbrev  0x00000764      0x19e zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
+ .debug_abbrev  0x00000902      0x362 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+ .debug_abbrev  0x00000c64      0x174 libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
+ .debug_abbrev  0x00000dd8      0x168 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
+ .debug_abbrev  0x00000f40       0xe3 libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
+ .debug_abbrev  0x00001023       0x9d libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
+ .debug_abbrev  0x000010c0       0x97 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
+ .debug_abbrev  0x00001157       0x28 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_abbrev  0x0000117f       0x28 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x000011a7       0x26 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
-.debug_aranges  0x00000000      0x3e8
+.debug_aranges  0x00000000      0x3c8
  .debug_aranges
                 0x00000000       0x28 build//main.o
  .debug_aranges
@@ -983,16 +974,14 @@ LOAD linker stubs
  .debug_aranges
                 0x00000348       0x20 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
  .debug_aranges
-                0x00000368       0x20 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_thumb1_case_uqi.o)
+                0x00000368       0x20 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
  .debug_aranges
-                0x00000388       0x20 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_udivsi3.o)
+                0x00000388       0x20 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
  .debug_aranges
-                0x000003a8       0x20 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_dvmd_tls.o)
- .debug_aranges
-                0x000003c8       0x20 /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
+                0x000003a8       0x20 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
 .debug_rnglists
-                0x00000000      0x271
+                0x00000000      0x25d
  .debug_rnglists
                 0x00000000       0x1a build//main.o
  .debug_rnglists
@@ -1011,8 +1000,6 @@ LOAD linker stubs
                 0x00000225       0x25 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
  .debug_rnglists
                 0x0000024a       0x13 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
- .debug_rnglists
-                0x0000025d       0x14 /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
 
 .debug_macro    0x00000000     0x469c
  .debug_macro   0x00000000      0x1ce build//main.o
@@ -1073,88 +1060,83 @@ LOAD linker stubs
  .debug_macro   0x000044fc       0xbc libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
  .debug_macro   0x000045b8       0xe4 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
 
-.debug_line     0x00000000     0x353b
+.debug_line     0x00000000     0x348e
  .debug_line    0x00000000      0x466 build//main.o
  .debug_line    0x00000466      0x34e build//vector/vector.o
  .debug_line    0x000007b4      0x402 zeroRTOS/lib/armv6-m/libzeroRTOS.a(kernel.o)
- .debug_line    0x00000bb6      0x4a7 zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
- .debug_line    0x0000105d      0x338 zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
- .debug_line    0x00001395      0x40b zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
- .debug_line    0x000017a0      0xb25 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
- .debug_line    0x000022c5      0x459 libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
- .debug_line    0x0000271e      0x367 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
- .debug_line    0x00002a85      0x345 libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
- .debug_line    0x00002dca      0x2e2 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
- .debug_line    0x000030ac      0x2b1 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
- .debug_line    0x0000335d       0x52 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_thumb1_case_uqi.o)
- .debug_line    0x000033af       0x67 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_udivsi3.o)
- .debug_line    0x00003416       0x4a /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_dvmd_tls.o)
- .debug_line    0x00003460       0xdb /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
+ .debug_line    0x00000bb6      0x4e6 zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
+ .debug_line    0x0000109c      0x338 zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
+ .debug_line    0x000013d4      0x40b zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
+ .debug_line    0x000017df      0xb25 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+ .debug_line    0x00002304      0x459 libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
+ .debug_line    0x0000275d      0x367 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
+ .debug_line    0x00002ac4      0x345 libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
+ .debug_line    0x00002e09      0x2e2 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
+ .debug_line    0x000030eb      0x2b1 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
+ .debug_line    0x0000339c       0x52 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_line    0x000033ee       0x56 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_line    0x00003444       0x4a /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
-.debug_str      0x00000000     0xd571
- .debug_str     0x00000000     0xd571 build//main.o
+.debug_str      0x00000000     0xd438
+ .debug_str     0x00000000     0xd438 build//main.o
                                0xa770 (size before relaxing)
- .debug_str     0x0000d571        0x0 build//vector/vector.o
+ .debug_str     0x0000d438        0x0 build//vector/vector.o
                                0x54e0 (size before relaxing)
- .debug_str     0x0000d571        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(kernel.o)
+ .debug_str     0x0000d438        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(kernel.o)
                                0x825b (size before relaxing)
- .debug_str     0x0000d571        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
-                               0x82b1 (size before relaxing)
- .debug_str     0x0000d571        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
-                               0x6d0e (size before relaxing)
- .debug_str     0x0000d571        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
+ .debug_str     0x0000d438        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
+                               0x82aa (size before relaxing)
+ .debug_str     0x0000d438        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
+                               0x6cfd (size before relaxing)
+ .debug_str     0x0000d438        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
                                0x8241 (size before relaxing)
- .debug_str     0x0000d571        0x0 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+ .debug_str     0x0000d438        0x0 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
                                0x870e (size before relaxing)
- .debug_str     0x0000d571        0x0 libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
+ .debug_str     0x0000d438        0x0 libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
                                0x7b95 (size before relaxing)
- .debug_str     0x0000d571        0x0 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
+ .debug_str     0x0000d438        0x0 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
                                0x4553 (size before relaxing)
- .debug_str     0x0000d571        0x0 libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
+ .debug_str     0x0000d438        0x0 libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
                                0x4f29 (size before relaxing)
- .debug_str     0x0000d571        0x0 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
+ .debug_str     0x0000d438        0x0 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
                                0x5496 (size before relaxing)
- .debug_str     0x0000d571        0x0 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
+ .debug_str     0x0000d438        0x0 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
                                0x7566 (size before relaxing)
- .debug_str     0x0000d571        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_thumb1_case_uqi.o)
-                                 0xcf (size before relaxing)
- .debug_str     0x0000d571        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_udivsi3.o)
-                                 0xd4 (size before relaxing)
- .debug_str     0x0000d571        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_dvmd_tls.o)
-                                 0xd5 (size before relaxing)
- .debug_str     0x0000d571        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
-                                0x1b9 (size before relaxing)
+ .debug_str     0x0000d438        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                                 0xe8 (size before relaxing)
+ .debug_str     0x0000d438        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                                 0xed (size before relaxing)
+ .debug_str     0x0000d438        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                                 0xee (size before relaxing)
 
-.comment        0x00000000       0x46
- .comment       0x00000000       0x46 build//main.o
+.comment        0x00000000       0x23
+ .comment       0x00000000       0x23 build//main.o
                                  0x24 (size before relaxing)
- .comment       0x00000046        0x0 build//vector/vector.o
+ .comment       0x00000023        0x0 build//vector/vector.o
                                  0x24 (size before relaxing)
- .comment       0x00000046        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(kernel.o)
+ .comment       0x00000023        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(kernel.o)
                                  0x24 (size before relaxing)
- .comment       0x00000046        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
+ .comment       0x00000023        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
                                  0x24 (size before relaxing)
- .comment       0x00000046        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
+ .comment       0x00000023        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
                                  0x24 (size before relaxing)
- .comment       0x00000046        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
+ .comment       0x00000023        0x0 zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
                                  0x24 (size before relaxing)
- .comment       0x00000046        0x0 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+ .comment       0x00000023        0x0 libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
                                  0x24 (size before relaxing)
- .comment       0x00000046        0x0 libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
+ .comment       0x00000023        0x0 libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
                                  0x24 (size before relaxing)
- .comment       0x00000046        0x0 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
+ .comment       0x00000023        0x0 libopencm3/lib/libopencm3_stm32l0.a(systick.o)
                                  0x24 (size before relaxing)
- .comment       0x00000046        0x0 libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
+ .comment       0x00000023        0x0 libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
                                  0x24 (size before relaxing)
- .comment       0x00000046        0x0 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
+ .comment       0x00000023        0x0 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
                                  0x24 (size before relaxing)
- .comment       0x00000046        0x0 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
-                                 0x24 (size before relaxing)
- .comment       0x00000046        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
+ .comment       0x00000023        0x0 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
                                  0x24 (size before relaxing)
 
 .ARM.attributes
-                0x00000000       0x31
+                0x00000000       0x2c
  .ARM.attributes
                 0x00000000       0x2c build//main.o
  .ARM.attributes
@@ -1180,15 +1162,13 @@ LOAD linker stubs
  .ARM.attributes
                 0x000001e4       0x2c libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
  .ARM.attributes
-                0x00000210       0x1c /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_thumb1_case_uqi.o)
+                0x00000210       0x1e /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
  .ARM.attributes
-                0x0000022c       0x1c /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_udivsi3.o)
+                0x0000022e       0x1e /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
  .ARM.attributes
-                0x00000248       0x1c /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_dvmd_tls.o)
- .ARM.attributes
-                0x00000264       0x2a /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
+                0x0000024c       0x1e /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
-.debug_frame    0x00000000      0x7c0
+.debug_frame    0x00000000      0x7a0
  .debug_frame   0x00000000       0x80 build//main.o
  .debug_frame   0x00000080       0x48 build//vector/vector.o
  .debug_frame   0x000000c8       0x44 zeroRTOS/lib/armv6-m/libzeroRTOS.a(kernel.o)
@@ -1201,41 +1181,38 @@ LOAD linker stubs
  .debug_frame   0x00000688       0x88 libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
  .debug_frame   0x00000710       0x50 libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
  .debug_frame   0x00000760       0x20 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
- .debug_frame   0x00000780       0x20 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_udivsi3.o)
- .debug_frame   0x000007a0       0x20 /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
+ .debug_frame   0x00000780       0x20 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
 
 .debug_loclists
-                0x00000000      0xaba
+                0x00000000      0xae4
  .debug_loclists
                 0x00000000       0x93 build//vector/vector.o
  .debug_loclists
-                0x00000093       0xb6 zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
+                0x00000093      0x10c zeroRTOS/lib/armv6-m/libzeroRTOS.a(tasks.o)
  .debug_loclists
-                0x00000149       0xc7 zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
+                0x0000019f       0xc7 zeroRTOS/lib/armv6-m/libzeroRTOS.a(memory.o)
  .debug_loclists
-                0x00000210       0x35 zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
+                0x00000266       0x35 zeroRTOS/lib/armv6-m/libzeroRTOS.a(port.o)
  .debug_loclists
-                0x00000245      0x56e libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
+                0x0000029b      0x56e libopencm3/lib/libopencm3_stm32l0.a(rcc.o)
  .debug_loclists
-                0x000007b3       0xb4 libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
+                0x00000809       0xb4 libopencm3/lib/libopencm3_stm32l0.a(rcc_common_all.o)
  .debug_loclists
-                0x00000867       0x8e libopencm3/lib/libopencm3_stm32l0.a(systick.o)
+                0x000008bd       0x8e libopencm3/lib/libopencm3_stm32l0.a(systick.o)
  .debug_loclists
-                0x000008f5      0x149 libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
+                0x0000094b      0x149 libopencm3/lib/libopencm3_stm32l0.a(nvic.o)
  .debug_loclists
-                0x00000a3e       0x1c libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
+                0x00000a94       0x1c libopencm3/lib/libopencm3_stm32l0.a(flash_common_all.o)
  .debug_loclists
-                0x00000a5a       0x34 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
- .debug_loclists
-                0x00000a8e       0x2c /usr/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-strcpy.o)
+                0x00000ab0       0x34 libopencm3/lib/libopencm3_stm32l0.a(pwr_common_v2.o)
 
 .debug_line_str
-                0x00000000       0xad
+                0x00000000       0xc6
  .debug_line_str
-                0x00000000       0xad /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_thumb1_case_uqi.o)
+                0x00000000       0xc6 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
  .debug_line_str
-                0x000000ad        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_udivsi3.o)
-                                 0xad (size before relaxing)
+                0x000000c6        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                                 0xc6 (size before relaxing)
  .debug_line_str
-                0x000000ad        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/libgcc.a(_dvmd_tls.o)
-                                 0xad (size before relaxing)
+                0x000000c6        0x0 /usr/lib/gcc/arm-none-eabi/15.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                                 0xc6 (size before relaxing)

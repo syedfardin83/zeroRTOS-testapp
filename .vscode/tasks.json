@@ -1,0 +1,52 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build zeroRTOSapp",
+            "type": "shell",
+            "command": "make",
+            "options": {
+                "cwd": "${workspaceFolder}/"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Flash zeroRTOSapp (OpenOCD)",
+            "type": "shell",
+            "dependsOn": "Build firmware",
+            "command": "openocd",
+            "args": [
+                "-f",
+                "interface/stlink.cfg",
+                "-f",
+                "target/stm32l0.cfg",
+                "-c",
+                "program firmware.elf verify reset exit"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "Build and Flash zeroRTOS",
+            "type": "shell",
+            "command": "make && openocd -f interface/stlink.cfg -f target/stm32l0.cfg -c 'program firmware.elf verify reset exit'",
+            "options": {
+                "cwd": "${workspaceFolder}/src"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        }
+    ]
+}
