@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/lib/gcc/arm-none-eabi/15.2.0/include",
+                "/usr/lib/gcc/arm-none-eabi/15.2.0/include-fixed",
+                "/usr/arm-none-eabi/include",
+                "${workspaceFolder}/**"
+
+            ],
+            "defines": ["_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "STM32L0",
+                "ZRTOS_ARCH_ARMV6M"
+            ],
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+            "compilerArgs": [
+                "-mcpu=cortex-m0plus",
+                "-mthumb",
+                "-msoft-float",
+                "-ffreestanding"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++98",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}
